@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorpresa de San Valentín</title>
+</head>
+<body>
+   <div class="container">
+       <div id="countdown">10</div>
+       <div id="message" class="hidden">Elige tu regalo!</div>
+       <div id="heart-box" class="hidden">
+           <div id="heart" onclick="showInteractiveButtons()"></div>
+       </div>
+       <div id="buttons-container" class="hidden">
+           <button id="carta-button" onclick="openCard()">Carta</button>
+           <button id="corazon-button" onclick="showHeartImage()">Corazón</button>
+       </div>
+       <div id="card-container" class="hidden">
+           <button id="back-button" onclick="goBack()">Volver atrás</button>
+           <div id="card" class="hidden">
+               <p id="message-card"></p>
+           </div>
+       </div>
+       <div id="heart-image-container" class="hidden">
+           <button id="back-button-heart" onclick="goBack()">Volver atrás</button>
+           <div id="heart-image" class="hidden">
+               <img src="corazon.jpg" alt="Imagen de corazón">
+           </div>
+       </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
+

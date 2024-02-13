@@ -1,0 +1,61 @@
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   margin: 0;
+   background-color: #ffcccb; /* Color de fondo rosa claro (puedes cambiarlo) */
+}
+
+.container {
+   text-align: center;
+   font-family: 'Arial', sans-serif;
+}
+
+#countdown {
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+#heart-box, #card {
+   position: relative;
+   width: 150px;
+   height: 150px;
+}
+
+#heart {
+   width: 100%;
+   height: 100%;
+   background: url('heart.png') no-repeat center center;
+   background-size: cover;
+   cursor: pointer;
+}
+
+.hidden {
+   display: none;
+}
+
+/* Añade las clases para los efectos visuales */
+.pulse {
+   animation: pulseAnimation 1s infinite;
+}
+
+@keyframes pulseAnimation {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.05); }
+   100% { transform: scale(1); }
+}
+
+.fadeIn {
+   animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+}
+
+#heart-image img {
+   max-width: 100%; /* Hace que la imagen no sea más ancha que su contenedor */
+   max-height: 100%; /* Hace que la imagen no sea más alta que su contenedor */
+}
